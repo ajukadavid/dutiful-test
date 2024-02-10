@@ -1,7 +1,7 @@
 <template>
-    <div class="input-container ">
+    <div class="input-container">
       <label class="text-[#603F8B] font-semibold text-sm" :for="id">{{ label }}</label>
-      <div class="input-wrapper">
+      <div class="flex items-center px-3 border-[#E7EAF1] border rounded-lg">
         <input
           :type="type"
           :id="id"
@@ -10,7 +10,9 @@
           @input="emitInput"
           :placeholder="placeholder"
         />
-        <span v-if="icon" class="icon"><i :class="icon"></i></span>
+        <span>
+            <slot name="icon"></slot>
+        </span>
       </div>
     </div>
   </template>
@@ -22,7 +24,6 @@
     label: { type: String, required: true },
     type: { type: String, default: 'text' },
     placeholder: { type: String, default: '' },
-    icon: { type: String, default: '' },
   });
   
   const id = `input-${uuidv4()}`;
@@ -46,12 +47,12 @@
   
   input {
     padding: 0.5rem;
-    border: 1px solid #ccc;
-    border-radius: 0.25rem;
+    border: 0;
+   outline: none;
     width: 100%;
   }
   
-  .icon {
+  .slot-icon {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);

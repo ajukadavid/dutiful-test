@@ -19,12 +19,12 @@
                 Check your email to get the code.</span>
 
 
-            <form class="mb-10 w-full space-y-4">
+            <div class="mb-10 w-full space-y-4">
                 <div class="flex flex-col mt-10 space-y-1 items-center">
                     <button @click="$router.push('/confirmOtp')" class="w-full rounded shadow-md bg-[#532f82] text-white py-3">Next</button>
 
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 </template>
@@ -33,5 +33,4 @@
 definePageMeta({
     layout: 'another'
 })
-const isService = ref(false)
 </script>
