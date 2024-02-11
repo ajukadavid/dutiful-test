@@ -35,5 +35,4 @@
 definePageMeta({
   layout: 'another'
 })
-const isService = ref(false)
 </script>

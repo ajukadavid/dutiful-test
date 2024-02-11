@@ -4,7 +4,7 @@
             <div class="flex flex-col">
                 <span class="text-lg font-bold mb-4">Company</span>
                 <span class="font-thin text-sm mb-1">About</span>
-                <span @click="$router.push('/contact')" class="font-thin text-sm mb-1">Contact us</span>
+                <span @click="$router.push('/contact')" class="font-thin cursor-pointer text-sm mb-1">Contact us</span>
                 <span class="font-thin text-sm">FAQs</span>
             </div>
             <div class="flex flex-col">
