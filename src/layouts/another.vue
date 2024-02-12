@@ -4,7 +4,7 @@
         <NavBar />
 
         </header>
-        <main class="flex-grow">
+        <main class="flex-grow mt-20">
             <slot />
 
         </main>
