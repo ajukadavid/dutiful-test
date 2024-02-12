@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="w-full">
         <div class="flex mt-10 px-60 flex-col w-full items-center justify-center">
             <span class="text-4xl mb-3">Plans to Suit Your Business Budget</span>
             <span class="text-[#656565]">Our fully organized plans deliver valuable content that showcases your services and
